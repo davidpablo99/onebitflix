@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
-  },
-  "keywords": [],
+	"dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+},
   "author": "",
   "license": "ISC",
   "description": "",

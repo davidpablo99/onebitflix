@@ -1,5 +1,13 @@
-import {Category} from "./Category";
+// src/models/index.ts
 
-export { 
-    Category
+import { Category } from './Category'
+import { Course } from './Course'
+
+Category.hasMany(Course)
+
+Course.belongsTo(Category)
+
+export {
+  Course,
+  Category
 }

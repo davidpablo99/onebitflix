@@ -1,13 +1,16 @@
 // config/sequelizeCli.js
+import { sequelize } from '../database'
+import { adminJsResources } from './resources'
 
 module.exports = {
     development: {
       dialect: 'postgres',
       host: 'localhost',
       port: '5432',
-      database: 'onebitflix_development',
+      resources: adminJsResources,
+      rootPath: '/admin',
+      databases: [sequelize],
       username: 'onebitflix',
       password: 'onebitflix'
     }
   }
-// Normalmente não se usa os logins e senhas assim no codigo. deve-se usar as variaveis de ambiente.
